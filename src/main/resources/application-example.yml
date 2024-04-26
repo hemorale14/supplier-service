@@ -1,0 +1,13 @@
+---
+spring:
+  h2:
+    console:
+      enabled: true     
+      path: /h2-db
+  datasource:
+    url: jdbc:h2:mem:97c04067-4cb6-4518-9fdf-fdd1a827004f
+    driverClassName: org.h2.Driver
+  jpa:
+    generate-ddl: true
+    hibernate.ddl-auto: update
+    database-platform: org.hibernate.dialect.H2Dialect
